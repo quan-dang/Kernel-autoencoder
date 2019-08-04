@@ -1,0 +1,57 @@
+ % Define paras
+ DR = rand;
+ Cr = rand; 
+ times_rand_state = 30;
+ index_func = 1;
+ maxIter = 200;
+
+ PS = 100;
+ dim = 10;
+ average_fitness = zeros(maxIter, 1);
+ 
+ % Chaotic search
+ %{
+ for rand_state_number = 1:times_rand_state
+    [target, fitness_arr] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, rand_state_number);
+    average_fitness = average_fitness + fitness_arr; 
+ end
+ average_fitness = average_fitness./30;
+ plot(average_fitness);
+ %}
+ 
+ 
+ [~, fitness_arr1] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 1);
+ [~, fitness_arr2] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 2);
+ [~, fitness_arr3] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 3);
+ [~, fitness_arr4] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 4);
+ [~, fitness_arr5] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 5);
+ [~, fitness_arr6] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 6);
+ [~, fitness_arr7] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 7);
+ [~, fitness_arr8] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 8);
+ [~, fitness_arr9] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func, 9);
+ [~, fitness_arr10] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,10);
+ [~, fitness_arr11] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,11);
+ [~, fitness_arr12] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,12);
+ [~, fitness_arr13] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,13);
+ [~, fitness_arr14] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,14);
+ [~, fitness_arr15] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,15);
+ [~, fitness_arr16] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,16);
+ [~, fitness_arr17] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,17);
+ [~, fitness_arr18] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,18);
+ [~, fitness_arr19] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,19);
+ [~, fitness_arr20] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,20);
+ [~, fitness_arr21] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,21);
+ [~, fitness_arr22] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,22);
+ [~, fitness_arr23] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,23);
+ [~, fitness_arr24] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,24);
+ [~, fitness_arr25] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,25);
+ [~, fitness_arr26] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,26);
+ [~, fitness_arr27] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,27);
+ [~, fitness_arr28] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,28);
+ [~, fitness_arr29] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,29);
+ [~, fitness_arr30] = chaotic_search(PS, dim, DR, maxIter, Cr, index_func,30);
+ average_fitness = average_fitness + fitness_arr1 + fitness_arr2 + fitness_arr3 + fitness_arr4 + fitness_arr5 + fitness_arr6 + fitness_arr7 + fitness_arr8 + fitness_arr9 + fitness_arr10 + fitness_arr11 + fitness_arr12 + fitness_arr13 + fitness_arr14 + fitness_arr15 + fitness_arr16 + fitness_arr17 + fitness_arr18 + fitness_arr19 + fitness_arr20 + fitness_arr21 + fitness_arr22 + fitness_arr23 + fitness_arr24 + fitness_arr25 + fitness_arr26 + fitness_arr27 + fitness_arr28 + fitness_arr29 + fitness_arr30;
+ average_fitness = average_fitness./30;
+ plot(average_fitness);
+ 
+ 
